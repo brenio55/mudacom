@@ -34,6 +34,7 @@ header{
     position: fixed;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
+    min-height: 105px;
 
 }
 .titulo{
@@ -43,20 +44,21 @@ header{
 nav ul{
     display: flex;   
     justify-content: space-evenly;
-    gap: 100px;
+    gap: 40px;
     list-style: none;
-    margin-bottom: 0;
-    padding-top: 30px;
     font-size: 18px;
+    margin-right: 40px;
     
 }
 
-li{
-    font-size: 18px;
+nav ul li{
+    transition: 0.070s all;
 }
 
-nav li:hover{
-    font-size: 20px;
+nav ul li:hover{
+    transform: scale(1.075);
+    transition: 0.070s all;
+    cursor: pointer;
 }
 
 .login ul{
@@ -64,16 +66,22 @@ nav li:hover{
     margin: 0;
     padding: 0;
 }
-.login li {
-    background-color: var(--corPrincipal);
-    width: 107px;
-    height: 31px;
-    margin: 1px;
-    border-radius: 15px;
-}
+
 .login{
     display: flex;
     align-items: center;
+}
+.login div button{
+    background:none;
+    display:block;
+    width: 107px;
+    height: 31px;
+    margin: 1px;
+    border-radius: 7px;
+}
+
+.login div button:hover{
+    background-color: var(--corPrincipal);
 }
 
 .usuario{
