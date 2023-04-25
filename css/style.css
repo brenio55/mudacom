@@ -48,12 +48,28 @@ nav ul{
     margin-bottom: 0;
     padding-top: 30px;
     font-size: 18px;
+    
+}
+
+li{
+    font-size: 18px;
+}
+
+nav li:hover{
+    font-size: 20px;
 }
 
 .login ul{
     list-style: none;
     margin: 0;
     padding: 0;
+}
+.login li {
+    background-color: var(--corPrincipal);
+    width: 107px;
+    height: 31px;
+    margin: 1px;
+    border-radius: 15px;
 }
 .login{
     display: flex;
