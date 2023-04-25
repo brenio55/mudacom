@@ -6,6 +6,7 @@
     max-width: 100%;
     --corPrincipal:#cde6f5;
     font-family: "Poppins", sans-serif;
+    transition: all 0.6s;
 }
 
 body{
@@ -41,6 +42,10 @@ header{
     font-family: "Braah One", sans-serif;
 }
 
+.R{
+    display: flex;
+}
+
 nav ul{
     display: flex;   
     justify-content: space-evenly;
@@ -67,6 +72,16 @@ nav ul li:hover{
     padding: 0;
 }
 
+.loginButtons{
+    display: none;
+    transition: 1s all;
+}
+
+.loginButtons.mostrar{
+    display: block;
+    transition: 1s all;
+}
+
 .login{
     display: flex;
     align-items: center;
@@ -89,6 +104,8 @@ nav ul li:hover{
     margin-top: 10px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    transition: 1s all;
 }
 
 .bacground{
